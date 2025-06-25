@@ -480,6 +480,30 @@
             font-style: italic;
         }
 
+        /* Copyright Footer */
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .copyright-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .copyright-link:hover {
+            color: white;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -621,6 +645,12 @@
         <div class="forecast-container" id="forecastContainer">
             <div class="forecast-title">📅 5-Day Weather Forecast</div>
             <div class="forecast-grid" id="forecastGrid"></div>
+        </div>
+
+        <!-- Copyright Footer -->
+        <div class="copyright">
+            <p>© 2025 <a href="#" class="copyright-link">Hardik</a> | Weather Forecast App</p>
+            <p>Built with ❤️ using OpenWeatherMap API</p>
         </div>
     </div>
 
